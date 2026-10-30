@@ -44,5 +44,13 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: admin-jualan-tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url http://nginx:80
+    depends_on:
+      - nginx
+
 volumes:
   postgres_data:
