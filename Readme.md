@@ -8,6 +8,8 @@ Pastikan sudah menginstal:
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) atau Docker Engine
 - Docker Compose
+- Pastikan sudah clone backend dan frontend untuk admin-jualan
+- Ubah nama folder hasil clone menjadi "backend" dan "frontend" saja
 
 Pastikan Docker sedang berjalan sebelum menjalankan perintah.
 
