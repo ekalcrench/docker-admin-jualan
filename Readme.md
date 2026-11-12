@@ -165,7 +165,7 @@ docker compose restart
 | ----------- | ------------------------ | -------------- |
 | frontend    | React + Vite application | Internal: 80   |
 | backend     | NestJS API               | Internal: 8080 |
-| nginx       | Reverse proxy            | 3000:80        |
+| nginx       | Reverse proxy            | Internal:80    |
 | db          | PostgreSQL 17            | 5434:5432      |
 | cloudflared | Cloudflare Quick Tunnel  | -              |
 
@@ -195,4 +195,5 @@ docker compose restart
 | Build + menjalankan container | `docker compose up -d --build`             |
 | Melihat container             | `docker compose ps`                        |
 | Melihat logs                  | `docker compose logs -f`                   |
-| Menghentikan container        | `docker compose down`                      |
+| Menghentikan container        | `docker compose stop`                      |
+| Menghapus container           | `docker compose down`                      |
